@@ -6,10 +6,10 @@ Gem::Specification.new do |s|
   s.name        = "will_paginate_twitter_bootstrap"
   s.version     = WillPaginateTwitterBootstrap::VERSION
   s.authors     = ["Travis Jeffery"]
-  s.email       = ["travisjeffery@gmail.com"]
+  s.email       = ["t@travisjeffery.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Make will_paginate and Bootstrap, from Twitter work together.}
+  s.description = %q{Make will_paginate and Bootstrap, from Twitter work together.}
 
   s.rubyforge_project = "will_paginate_twitter_bootstrap"
 
@@ -18,7 +18,5 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
+  s.add_runtime_dependency "will_paginate", "> 3.0"
 end
